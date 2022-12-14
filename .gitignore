@@ -1,0 +1,5 @@
+.eslintrc.*
+.eslintignore
+package.json
+pnpm-lock.*
+node_modules
