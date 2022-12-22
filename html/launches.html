@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launches</title>
+    <script src="../js/launches.js"></script>
+    <script src="../js/navbar.js"></script>
+    <link rel="stylesheet" href="../css/globals.css">
+</head>
+<body onload="getLaunches(); navbar()" >
+
+    <div class="navbar" id="navbar"></div>
+
+    <div id="launches">
+        <table>
+            <thead>
+                <tr>
+                    <th>Flight Number</th>
+                    <th>Mission Name</th>
+                    <th>Launch Date</th>
+                    <th>Launch Status</th>
+                    <!-- <th>Launch Site</th> -->
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>
