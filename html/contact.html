@@ -6,9 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <script src="../js/navbar.js"></script>
+    <script src="../js/tab.js"></script>
     <link rel="stylesheet" href="../css/globals.css">
 </head>
 <body>
     <div class="navbar" id="navbar"></div>
+
+    <form name="information" id="formTab">
+          <label for="name">Nom : </label>
+          <input type="text" name="nom" id="nom" required>
+          <label for="email">Prénom : </label>
+          <input type="text" name="prenom" id="prenom" required>
+          <label for="email">Message : </label>
+          <input type="text" name="contenu" id="contenu" size="50"  required> <br> <br>
+          <input type="button" value="Envoyer" onclick="ajouter()">
+          <input type="reset" value="Supprimer">
+
+      </form>
+
+      <form name="newTask" action="#" class="box" id="new-task" onsubmit="return false">
+            <div class="tableau">
+                <main>
+                    <table>
+                        <tr>
+                            <td>Nom</td>
+                            <td>Prénom</td>
+                            <td>Message</td>
+                            <td>Date</td>
+                        </tr>
+
+
+
+                    </table>
+                </main>
+            </div>
+      </form>
+
+
 </body>
 </html>
