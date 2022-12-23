@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/spacexLogo.png" type="image/x-icon">
     <title>Launches</title>
     <script src="../js/launches.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/filter.js"></script>
     <link rel="stylesheet" href="../css/globals.css">
 </head>
-<body onload="getLaunches(); navbar()" >
+
+<body onload="getLaunches(); navbar()">
 
     <div class="navbar" id="navbar"></div>
 
     <div id="launches">
-        <table>
+        <input type="text" id="searchbar" onkeyup="search()" class="searchbar" placeholder="Search for a launch...">
+        <table id="table">
             <thead>
                 <tr>
                     <th>Flight Number</th>
                     <th>Mission Name</th>
                     <th>Launch Date</th>
                     <th>Launch Status</th>
-                    <!-- <th>Launch Site</th> -->
+                    <th>Launch Video</th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
     </div>
 </body>
+
 </html>

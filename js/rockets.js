@@ -55,7 +55,7 @@ function appendData(data){
     success.innerText = data.success
     firstFlight.innerText = data.firstFlight
     active.innerText = data.active
-    wikipedia.innerHTML = `<a href="${data.wikipedia}" target="_blank" class='wikipedia' >Read more</a>`
+    wikipedia.innerHTML = `<a href="${data.wikipedia}" target="_blank" class='button' >Read more</a>`
     
     newRow.appendChild(name)
     newRow.appendChild(dimensions)

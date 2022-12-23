@@ -2,6 +2,11 @@ function navbar() {
     const pageName = window.location.pathname.split("/").pop()
     const navbar = document.getElementById("navbar")
 
+    const logo = document.createElement("img")
+    logo.src = "../images/spacexLogo.png"
+    logo.classList.add("logo")
+    navbar.appendChild(logo)
+
     const home = document.createElement("a")
     home.href = "index.html"
     home.innerText = "Home"
@@ -32,11 +37,11 @@ function navbar() {
     crew.classList.add("nav-link")
     navbar.appendChild(crew)
 
-    const about = document.createElement("a")
-    about.href = "about.html"
-    about.innerText = "About"
-    about.classList.add("nav-link")
-    navbar.appendChild(about)
+    const contact = document.createElement("a")
+    contact.href = "contact.html"
+    contact.innerText = "Contact"
+    contact.classList.add("nav-link")
+    navbar.appendChild(contact)
 
     // Add the active class to the current page
     if(pageName === "index.html"){
@@ -47,8 +52,8 @@ function navbar() {
         launches.classList.add("active")
     } else if(pageName === "crew.html"){
         crew.classList.add("active")
-    } else if(pageName === "about.html"){
-        about.classList.add("active")
+    } else if(pageName === "contact.html"){
+        contact.classList.add("active")
     } else if(pageName === "starlinks.html"){
         starlinks.classList.add("active")
     }
