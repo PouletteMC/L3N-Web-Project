@@ -26,7 +26,6 @@ function handleData(starlinks){
 }
 
 function appendData(data){
-    console.table(data)
     const newRow = document.createElement('tr')
     const name = document.createElement('td')
     const version = document.createElement('td')

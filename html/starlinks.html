@@ -9,6 +9,7 @@
     <title>Starlinks</title>
     <script src="../js/starlink.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/filter.js"></script>
     <link rel="stylesheet" href="../css/globals.css">
 </head>
 
@@ -17,10 +18,10 @@
         <div class="navbar" id="navbar"></div>
     </header>
     <div id="starlinks">
-        <table>
+        <table id="table">
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th onclick="sort(0)">Name</th>
                     <th>Version</th>
                     <th>Launch Date</th>
                     <th>Altitude</th>

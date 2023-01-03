@@ -9,6 +9,7 @@
     <title>Crew</title>
     <script src="../js/crew.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/filter.js"></script>
     <link rel="stylesheet" href="../css/globals.css">
 </head>
 
@@ -17,12 +18,12 @@
         <div class="navbar" id="navbar"></div>
     </header>
     <div id="crew">
-        <table>
+        <table id="table">
             <thead>
                 <tr>
                     <th>Image</th>
-                    <th>Name</th>
-                    <th>Agency</th>
+                    <th onclick="sort(1)">Name</th>
+                    <th onclick="sort(2)">Agency</th>
                     <th>Wikipedia</th>
                 </tr>
             </thead>

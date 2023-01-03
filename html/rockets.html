@@ -9,6 +9,7 @@
     <title>Rockets</title>
     <script src="../js/rockets.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/filter.js"></script>
     <link rel="stylesheet" href="../css/globals.css">
 </head>
 
@@ -19,18 +20,18 @@
     </header>
 
     <div id="rockets">
-        <table>
+        <table id="table">
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th onclick="sort(0)">Name</th>
                     <th>Dimensions</th>
                     <th>Mass</th>
-                    <th>Engines</th>
+                    <th onclick="sort(3)">Engines</th>
                     <th>Thrust (sea level/vaccum)</th>
                     <th>Cost per launch</th>
                     <th>Success rate</th>
                     <th>First flight</th>
-                    <th>Active</th>
+                    <th onclick="sort(8)">Active</th>
                     <th>Wikipedia</th>
                 </tr>
             </thead>
