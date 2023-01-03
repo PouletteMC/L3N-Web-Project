@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,36 +11,45 @@
     <script src="../js/tab.js"></script>
     <link rel="stylesheet" href="../css/globals.css">
 </head>
-<body onload="navbar()" class="no-scroll" >
-    <div class="navbar" id="navbar"></div>
 
+<body onload="navbar()" class="no-scroll">
+    <header>
+        <div class="navbar" id="navbar"></div>
+    </header>
+
+    <h3>Anything you need to tell us?</h3>
     <form name="information" id="formTab">
-          <label for="name">Nom : </label>
-          <input type="text" name="nom" id="nom" required>
-          <label for="email">Prénom : </label>
-          <input type="text" name="prenom" id="prenom" required>
-          <label for="email">Message : </label>
-          <input type="text" name="contenu" id="contenu" size="50"  required> <br> <br>
-          <input type="button" value="Envoyer" onclick="ajouter()">
-          <input type="reset" value="Supprimer">
+        <label for="name">Nom : </label>
+        <input type="text" name="nom" id="nom" required>
+        <label for="email">Prénom : </label>
+        <input type="text" name="prenom" id="prenom" required>
+        <label for="email">Message : </label>
+        <input type="text" name="contenu" id="contenu" size="50" required> <br> <br>
+        <input type="button" value="Envoyer" onclick="ajouter()">
+        <input type="reset" value="Supprimer">
 
-      </form>
+    </form>
 
-      <form name="newTask" action="#" class="box" id="new-task" onsubmit="return false">
-            <div class="tableau">
-                <main>
-                    <table>
-                        <tr>
-                            <td>Nom</td>
-                            <td>Prénom</td>
-                            <td>Message</td>
-                            <td>Date</td>
-                        </tr>
-                    </table>
-                </main>
-            </div>
-      </form>
+    <form name="newTask" action="#" class="box" id="new-task" onsubmit="return false">
+        <div class="tableau">
+            <main>
+                <table>
+                    <tr>
+                        <td>Nom</td>
+                        <td>Prénom</td>
+                        <td>Message</td>
+                        <td>Date</td>
+                    </tr>
+                </table>
+            </main>
+        </div>
+    </form>
 
+    <footer>
+        <nav><a href="about.html">À propos</a></nav>
+        <p>© 2021 Eliot & Adam</p>
+    </footer>
 
 </body>
+
 </html>

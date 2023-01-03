@@ -44,6 +44,13 @@ body {
   text-decoration: none;
 }
 
+h3{
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  color: white;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -118,6 +125,7 @@ a {
 
 #formTab {
   margin-left: 50px;
+  margin-bottom: 60px;
 }
 
 #formTab #contenu {
@@ -126,4 +134,19 @@ a {
 
 #formTab label {
   display: block;
+}
+
+#description-website {
+  margin-top: 100px;
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  margin-top: 130px;
+}
+
+footer a{
+  color: white;
+  border-bottom: solid 1px white;
 }
