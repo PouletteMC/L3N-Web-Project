@@ -251,7 +251,8 @@ footer a:hover {
 }
 
 .tiledBackground {
-  background-image: url(../images/elon-musk.jpg);;
+  background-image: url(../images/elon-musk.jpg);
+  background-repeat: space;
   background-size: 150px;
   height: 120px;
   border: 2px solid;
