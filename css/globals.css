@@ -45,14 +45,12 @@ body {
 }
 
 h1 {
-  border-bottom: dotted 2px blue ;
+  border-bottom: dotted 2px blue;
 }
 
 h2 {
-border-bottom: dashed 2px green ;
-
+  border-bottom: dashed 2px green;
 }
-
 
 h3 {
   text-align: center;
@@ -61,17 +59,16 @@ h3 {
   color: white;
 }
 
-#first-para{
+#first-para {
   color: rgb(71, 159, 96);
   width: 80%;
   padding: 5px;
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
-
 }
 
-#second-para{
+#second-para {
   color: rgb(129, 38, 139);
   width: 80%;
   padding: 5px;
@@ -80,17 +77,14 @@ h3 {
   margin-bottom: 20px;
 }
 
-
 #imgIndex {
- margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
-#imgIndex img{
+#imgIndex img {
   width: 40%;
-  margin-left:70px;
+  margin-left: 70px;
 }
-
-
 
 table {
   border-collapse: collapse;
@@ -243,7 +237,35 @@ footer a {
   margin: 1rem;
 }
 
-footer a:hover{
+footer a:hover {
   color: rgb(71, 159, 96);
   border-bottom: solid 1px rgb(71, 159, 96);
+}
+
+/* =============== */
+
+.heartrate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardiac {
+  stroke-dasharray: 1200;
+  animation: 3s heart 0s linear infinite;
+}
+
+@keyframes heart {
+  from {
+    stroke-dashoffset: 1200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
 }
