@@ -44,12 +44,53 @@ body {
   text-decoration: none;
 }
 
+h1 {
+  border-bottom: dotted 2px blue ;
+}
+
+h2 {
+border-bottom: dashed 2px green ;
+
+}
+
+
 h3 {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 100px;
   color: white;
 }
+
+#first-para{
+  color: rgb(71, 159, 96);
+  width: 80%;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+#second-para{
+  color: rgb(129, 38, 139);
+  width: 80%;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+#imgIndex {
+ margin-bottom:50px;
+}
+
+#imgIndex img{
+  width: 40%;
+  margin-left:70px;
+}
+
+
 
 table {
   border-collapse: collapse;
@@ -200,4 +241,9 @@ footer a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   margin: 1rem;
+}
+
+footer a:hover{
+  color: rgb(71, 159, 96);
+  border-bottom: solid 1px rgb(71, 159, 96);
 }
