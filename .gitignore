@@ -3,3 +3,5 @@
 package.json
 pnpm-lock.*
 node_modules
+*.zip
+*.pdf
